@@ -44,7 +44,14 @@ function showAlert3() {
 showAlert3 ()
 //LOCAL VARIABLE: is the variable declared inside a function. The local variable can only be accessed from within the function
 
-
+function showAlert4() {
+    const name = 'Ania'
+    console.log (name + ', you have been alerted ')
+}
+function text() {
+    console.log (name + ', you have been texted')
+}
+text()
 
 // MINI-CHALLENGE: convert Celcius to Fahrenheit
 
