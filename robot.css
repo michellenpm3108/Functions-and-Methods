@@ -1,39 +1,51 @@
 body {
     background-color: black;
     margin: 0;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
 }
+/* ------POSITION-------- */
 .robot-yellow {
     position: absolute;
-    margin-top: 100px;
-    margin-left: 50px;
+    top: 300px;
+    right: 50px;
 }
 .robot-red {
     position: absolute;
     top: 100px;
     left: 50px;
 }
-.red-line {
-    position: absolute;
+
+/* ------FOODS-------------- */
+.food-up {
+    position: absolute; 
     top: 145px;
-    border: 10px solid red;
-    min-width: 100vw
 }
-.word {
-    position: absolute;
-    top: 80px;
+.food-down {
+    position: absolute; 
+    top: 345px;
 }
-.eat-lah {
-    color: white;
+.snacks {
+    width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: 0 130px;
-    font-size: 3rem;
 }
-.eat-lah p {
-    padding: 0 15px;
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: white;
 }
 
+/* -----WORDS--------------- */
+.word {
+    color: white;
+    font-size: 2rem;
+    margin-top: 220px;
+    letter-spacing: 20px;
 
+}
+/* ------PACMAN BODY-------- */
 .torso {
     width: 100px;
     height: 100px;
