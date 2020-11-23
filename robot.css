@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+.robot-yellow {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.robot-red {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.red-line {
+    position: absolute;
+    top: 145px;
+    border: 10px solid red;
+    min-width: 100vw
+}
+.word {
+    position: absolute;
+    top: 80px;
+}
+.eat-lah {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
+    font-size: 3rem;
+}
+.eat-lah p {
+    padding: 0 15px;
+}
+
+
+.torso {
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom: 7px black dashed;
+}
+.torso-robot-yellow {
+    background-color: yellow;
+}
+.torso-robot-red {
+    background-color: red;
+}
+
+.eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: deeppink; */
+    padding: 30px 20px 0 20px;
+
+}
+.eye {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 20px;
+}
+.mouth {
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    margin:15px auto;
+}
