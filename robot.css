@@ -7,7 +7,7 @@ body {
 /* ------POSITION-------- */
 .robot-yellow {
     position: absolute;
-    top: 300px;
+    top: 350px;
     right: 50px;
 }
 .robot-red {
@@ -15,16 +15,17 @@ body {
     top: 100px;
     left: 50px;
 }
-
-/* ------FOODS-------------- */
 .food-up {
     position: absolute; 
-    top: 145px;
+    top: 150px;
 }
 .food-down {
     position: absolute; 
-    top: 345px;
+    top: 400px;
 }
+
+/* ------FOODS-------------- */
+
 .snacks {
     width: 100vw;
     display: flex;
@@ -41,7 +42,7 @@ body {
 .word {
     color: white;
     font-size: 2rem;
-    margin-top: 220px;
+    margin-top: 250px;
     letter-spacing: 20px;
 
 }
