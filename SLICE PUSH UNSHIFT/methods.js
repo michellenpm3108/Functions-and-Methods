@@ -15,7 +15,6 @@ console.log(films)
 //change the length of that array
 
 let books = ['Moby Dick', 'Life of Pi', 'Sapiens']
-
 books.push('The Hungry Caterpillar')
 console.log(books)
 
@@ -28,37 +27,27 @@ let number = 34
 lottery.unshift(number)
 console.log(lottery)
 
-let gardenPlants = [ 
-    {
-        name: 'roses', 
-        origin: 'China'
-    },
-    {
-        name: 'tulips', 
-        origin: 'Asia'
-    },
-]
-let newPlant = {
-    name: 'daffodil',
-    origin: 'Spain'
-}
-gardenPlants.unshift(newPlant)
-console.log(gardenPlants)
 
-//Challenge: snake board game
+//Challenge: draw the snake on the board game
 let squares = Array.from(document.querySelectorAll('.grid div'))
 let currentSnake = []
-/
-//Challenge: draw the snake as 3 squares long on the third row down using unshift
-currentSnake.unshift(18,19,20)
 
-//Challenge: add to the HEAD of the snake using push
-currentSnake.push(21)
+currentSnake.unshift(18,19,20) //draw the snake as 3 squares long on the third row down using unshift
 
+currentSnake.push(21) //add to the HEAD of the snake using push
 
 currentSnake.forEach(element => squares[element].classList.add('snake'))
 
 
+//pop()
+//Remove the LAST item of an array
+//mutate the existing array
+
+//shift()
+//Remove the FIRST item of an array
+//mutate the existing array
+
+//forEach() method 
 var sum = 0;
 var numbers = [1, 2, 3 ,4]
 
