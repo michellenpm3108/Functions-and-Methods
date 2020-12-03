@@ -48,15 +48,25 @@ console.log(gardenPlants)
 //Challenge: snake board game
 let squares = Array.from(document.querySelectorAll('.grid div'))
 let currentSnake = []
-//add the number 0 to the currentSnake array to see what happens
-currentSnake.push(0)
-
+/
 //Challenge: draw the snake as 3 squares long on the third row down using unshift
 currentSnake.unshift(18,19,20)
-console.log(currentSnake)
 
 //Challenge: add to the HEAD of the snake using push
 currentSnake.push(21)
 
 
 currentSnake.forEach(element => squares[element].classList.add('snake'))
+
+
+var sum = 0;
+var numbers = [1, 2, 3 ,4]
+
+// for (let i = 0 ; i < numbers.length; i++) {
+//         sum += numbers[i]
+//     }
+//  document.getElementById('demo').innerHTML = sum
+
+numbers.forEach(item => sum += item)
+
+document.getElementById('demo').innerHTML = sum
