@@ -1,0 +1,15 @@
+#supermarket-items,
+#my-list{
+    width: 50vw;
+    height: 10vh;
+    background-color: pink;
+    padding: 1em;
+}
+
+input {
+    margin: 1em 0;
+    display: block;
+    font-size: .5rem;
+    width: 54vw;
+    height: 5vh;
+}
