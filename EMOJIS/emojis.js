@@ -6,9 +6,9 @@ const list = document.getElementById('list')
 const addBtn = document.getElementById('push-btn')
 const input = document.getElementById('input')
 for (let i=0 ; i<vegetables.length ; i++) {
-    let itemsList = document.createElement('span')
-    itemsList.textContent = vegetables[i]
-    marketItems.append(itemsList)
+    let veggieDeals = document.createElement('span')
+    veggieDeals.textContent = vegetables[i]
+    marketItems.append(veggieDeals)
 }
 
 addBtn.addEventListener('click', function (){
