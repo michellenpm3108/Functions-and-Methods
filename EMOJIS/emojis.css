@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
 }
-#supermarket-items,
+
 #my-list{
     width: 50vw;
+    min-height: 10vh;
     background-color: pink;
     padding: 1em;
 }

@@ -1,18 +1,18 @@
-let vegetables = ['🍅' ,'🍆' ,'🥑' ,'🥦' ,'🥬' ,'🥒', '🌶' ,'🌽' ,'🥕' ,'🧄', '🧅']
-let fruits = ['🍎' ,'🍐' ,'🍊' ,'🍋' ,'🍌' ,'🍉','🍇' ,'🍓','🍈' ,'🍒' ,'🍑' ,'🥭' ,'🍍' ,'🥥' ,'🥝']
-
-const marketItems = document.getElementById('supermarket-items')
+const input = document.getElementById ('input')
+const pushBtn = document.getElementById('push-btn')
+const unshiftBtn = document.getElementById('unshift-btn')
 const list = document.getElementById('list')
-const addBtn = document.getElementById('push-btn')
-const input = document.getElementById('input')
-for (let i=0 ; i<vegetables.length ; i++) {
-    let veggieDeals = document.createElement('span')
-    veggieDeals.textContent = vegetables[i]
-    marketItems.append(veggieDeals)
+
+function renderList() {
+    let newTask = document.createElement('li')
+    newTask.textContent = input.value
+    list.append(newTask)
 }
 
-addBtn.addEventListener('click', function (){
-    let toBuyList = document.createElement ('li')
-    toBuyList.textContent = input.value
-    list.append(toBuyList)
+
+pushBtn.addEventListener('click', function () {
+    if (input.value) {
+        renderList()
+        input.value = ""
+    }
 })
