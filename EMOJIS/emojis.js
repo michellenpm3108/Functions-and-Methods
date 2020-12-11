@@ -25,9 +25,13 @@ pushBtn.addEventListener('click', function () {
     }
 })
 
-console.log(list)
 popBtn.addEventListener('click',function (){
     // list.innerHTML=""
     todo.pop()
     renderList()
+})
+
+const toogleBtn = document.getElementById('toogle-btn')
+toogleBtn.addEventListener('click', function(){
+    document.querySelector('body').style.backgroundColor = 'black'
 })
