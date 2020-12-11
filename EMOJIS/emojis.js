@@ -1,18 +1,33 @@
 const input = document.getElementById ('input')
 const pushBtn = document.getElementById('push-btn')
-const unshiftBtn = document.getElementById('unshift-btn')
+const popBtn = document.getElementById('pop-btn')
 const list = document.getElementById('list')
 
+let todo = []
 function renderList() {
-    let newTask = document.createElement('li')
-    newTask.textContent = input.value
-    list.append(newTask)
+    list.innerHTML=""
+    for (let i=0 ; i<todo.length ; i++) {
+        let newTask = document.createElement('li')
+        newTask.textContent = todo[i]
+        list.append(newTask)
+        
+    }
 }
 
 
 pushBtn.addEventListener('click', function () {
     if (input.value) {
+        todo.push(input.value)
+        // list.innerHTML=""
         renderList()
+        list.classList.add('style')
         input.value = ""
     }
+})
+
+console.log(list)
+popBtn.addEventListener('click',function (){
+    // list.innerHTML=""
+    todo.pop()
+    renderList()
 })

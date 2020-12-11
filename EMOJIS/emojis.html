@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personality Emojis</title>
-    <link href="emojis.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">    <link href="emojis.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <h2>My To-do List</h2>
 
-    <h2>My To-do list</h2>
-    <div id="my-list">
+    <div class="my-list">
         <ol id="list">
 
         </ol>
     </div>
-    <input id="input" type="text" placeholder="today i'm gonna ...">
 
-    <button class="btn" id="push-btn"> Add task</button> 
-    <button class="btn" id="pop-btn"> Remove task</button>
+    <input class="input" id="input" type="text" placeholder="today i'm gonna ...">
 
+    <div class="btn-wrapper">
+        <button class="btn" id="push-btn"> Add task</button> 
+        <button class="btn" id="pop-btn"> Remove task</button>    
+    </div>
+
+</div>
+<div class="toogle-bg">
+
+</div>
+    
     
     <script src="emojis.js"></script>
 </body>
